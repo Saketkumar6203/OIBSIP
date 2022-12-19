@@ -24,7 +24,7 @@ public class numberguessing {
          int t=7;
          int i;
          int tries=0;
-         int score =5;
+         int score =0;
          Random rand=new Random();
          int num=rand.nextInt(100);
          for( i=0;i<t;i++){
@@ -33,6 +33,7 @@ public class numberguessing {
             guess=sc.nextInt();
             if(num==guess){
                 tries++;
+                score++;
                 System.out.println("wohoo! you guessed the right number.");
                 System.out.println();
                 System.out.println("score ="+score);
